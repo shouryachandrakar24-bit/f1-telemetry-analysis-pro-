@@ -48,32 +48,6 @@ output/: Directory where generated plots are saved.
 
 data/: Local cache for FastF1 data (speeds up repeat executions)
 
-Data Source
-Data is sourced from the official F1 Live Timing API via the FastF1 library.
-
-Developed for F1 Data Enthusiasts.
 
 
----
 
-### 3. The .gitignore (Essential for Clean Code)
-GitHub users hate seeing "junk" files in a repository. Create a file named `.gitignore` (with the dot at the start) so you don't upload your data cache or temporary files. Paste this inside:
-
-```text
-# Python
-__pycache__/
-*.py[cod]
-
-# FastF1 Data Cache
-data/
-
-# Local Outputs
-output/*.png
-
-# Virtual Environments
-venv/
-.env
-4. Professional Commit Message
-When you upload the files, use a clear commit message instead of just "upload":
-
-feat: initial release of professional telemetry suite with delta-time and track-map logic
